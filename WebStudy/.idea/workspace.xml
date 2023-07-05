@@ -18,6 +18,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -48,7 +51,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "F:/Sources/zenofsword/zenofsword-back",
+    "last_opened_file_path": "F:/Sources/WebStrudy/WebStudy",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -62,7 +65,7 @@
       <recent name="org.test.car" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CarApp">
+  <component name="RunManager" selected="Application.org.test.WXApp">
     <configuration name="CarApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.test.car.CarApp" />
       <module name="car" />
@@ -76,22 +79,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AsynchronizationTest.asynchronize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="study-web-start" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AsynchronizationTest" />
-      <option name="METHOD_NAME" value="asynchronize" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="WXApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.test.wx.WXApp" />
+      <module name="wx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.test.wx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AsynchronizationTest.synchronize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="study-web-start" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AsynchronizationTest" />
-      <option name="METHOD_NAME" value="synchronize" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="WXApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.test.wx.WXApp" />
+      <module name="wx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.test.wx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.org.test.WXApp" />
+        <item itemvalue="Application.WXApp" />
         <item itemvalue="Application.CarApp" />
         <item itemvalue="JUnit.KafKa" />
         <item itemvalue="JUnit.KafKa.kafka" />
-        <item itemvalue="JUnit.AsynchronizationTest.asynchronize" />
-        <item itemvalue="JUnit.AsynchronizationTest.synchronize" />
       </list>
     </recent_temporary>
   </component>
@@ -135,5 +144,10 @@
       <updated>1688285891615</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/WebStudy$WXApp.ic" NAME="WXApp Coverage Results" MODIFIED="1688542803777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.test.wx.*</FILTER>
+    </SUITE>
   </component>
 </project>
