@@ -1,0 +1,5 @@
+org.test.wx.config.WXConfig
+org.test.wx.handler.ImageHandler
+org.test.wx.handler.SubscribeHandler
+org.test.wx.handler.TextHandler
+org.test.wx.handler.UnSubscribeHandler
