@@ -1,0 +1,55 @@
+########################################基本配置########################################
+server:
+  port: 1112
+
+spring:
+  application:
+    name: car
+
+
+
+########################################数据库配置########################################
+  datasource:
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://127.0.0.1:3306/zenofsword_car?useUnicode=true&useSSL=false&characterEncoding=utf8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
+    username: root
+    password: 123456
+
+
+
+########################################mybatis配置########################################
+mybatis-plus:
+  configuration:
+    ###这是什么？日志路径如何配置？
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    mapper-locations: classpath:/mapper/*Mapper.xml
+    lazyLoadingEnabled: true
+    aggressiveLazyLoad: true
+    cache-enabled: true
+
+
+
+########################################pagehelper配置########################################
+pagehelper:
+  helper-dialect: mysql
+#  reasonable: true
+#  support-methods-arguments: true
+#  params: count
+
+
+
+########################################pagehelper配置########################################
+wx:
+  mp:
+    app-id: appid
+    secret: secret
+    token: token
+
+
+
+########################################自定义########################################
+web-study:
+  zookeeper:
+    configuration-properties:
+    serverUrl: 127.0.0.1:10000
+    sessionTimeOut: 50000
