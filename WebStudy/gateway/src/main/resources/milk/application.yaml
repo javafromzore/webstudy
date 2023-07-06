@@ -13,3 +13,21 @@ server:
 spring:
   application:
     name: gateway
+
+
+
+########################################服务注册与发现配置########################################
+  cloud:
+    gateway:
+      routes:
+        #####car模块#####
+        - id: car
+          uri: http://127.0.0.1:1111
+          #          lb://car
+          predicates:
+            - Path=/car/**
+        #####car模块#####
+        - id: user
+          uri: lb://user
+          predicates:
+            - Path=/user/**

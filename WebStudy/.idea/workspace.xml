@@ -68,7 +68,7 @@
       <recent name="org.test.car" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.org.test.user.UserApp">
+  <component name="RunManager" selected="Application.GatewayApp">
     <configuration name="CarApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.test.car.CarApp" />
       <module name="car" />
@@ -149,10 +149,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GatewayApp" />
         <item itemvalue="Application.org.test.user.UserApp" />
         <item itemvalue="Application.UserApp" />
         <item itemvalue="Application.CarApp" />
-        <item itemvalue="Application.GatewayApp" />
         <item itemvalue="Application.WXApp" />
       </list>
     </recent_temporary>
