@@ -1,17 +1,19 @@
 ########################################基本配置########################################
 server:
-  port: 1112
+  port: 1111
 
 spring:
   application:
     name: car
+  profiles:
+    active: dev
 
 
 
 ########################################数据库配置########################################
   datasource:
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://127.0.0.1:3306/zenofsword_car?useUnicode=true&useSSL=false&characterEncoding=utf8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/study-car?useUnicode=true&useSSL=false&characterEncoding=utf8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
     username: root
     password: 123456
 
@@ -35,15 +37,6 @@ pagehelper:
 #  reasonable: true
 #  support-methods-arguments: true
 #  params: count
-
-
-
-########################################pagehelper配置########################################
-wx:
-  mp:
-    app-id: appid
-    secret: secret
-    token: token
 
 
 

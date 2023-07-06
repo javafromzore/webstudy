@@ -41,9 +41,9 @@ pagehelper:
 ########################################pagehelper配置########################################
 wx:
   mp:
-    app-id: appid
-    secret: secret
-    token: token
+    app-id: wx35d124561ba3b3fc
+#    secret: 123456
+    token: 123456
 
 
 

@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>car</artifactId>
+    <artifactId>user</artifactId>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
@@ -17,8 +17,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-
     <dependencies>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.test</groupId>
             <artifactId>study-common-start</artifactId>
@@ -32,16 +36,6 @@
         <dependency>
             <groupId>org.test</groupId>
             <artifactId>study-web-start</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.test</groupId>
-            <artifactId>config</artifactId>
         </dependency>
     </dependencies>
 
