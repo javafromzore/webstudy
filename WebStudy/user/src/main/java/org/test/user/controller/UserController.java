@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.test.user.model.vo.UserVO;
+import org.test.user.vo.user.UserVO;
 import org.test.user.service.UserService;
 import org.test.common.model.vo.Result;
 

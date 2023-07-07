@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/WebStudy/car/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/car/src/main/resources/${env}" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/car/src/main/resources/milk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/car/src/main/resources/public" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/carApi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/carApi/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/config/src/main/resources/${env}" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/config/src/main/resources/milk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/config/src/main/resources/public" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebStudy/framework/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebStudy/framework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/framework/study-aop-start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/framework/study-aop-start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebStudy/framework/study-common-start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebStudy/framework/study-common-start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebStudy/framework/study-kafka-start/src/main/java" charset="UTF-8" />
@@ -13,8 +25,28 @@
     <file url="file://$PROJECT_DIR$/WebStudy/framework/study-redis-start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebStudy/framework/study-web-start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebStudy/framework/study-web-start/src/main/resources/${env}" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/framework/study-web-start/src/main/resources/milk" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebStudy/framework/study-web-start/src/main/resources/public" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/framework/study-wx-start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/framework/study-wx-start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebStudy/framework/study-zookeeper-start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebStudy/framework/study-zookeeper-start/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/gateway/src/main/resources/${env}" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/gateway/src/main/resources/milk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/gateway/src/main/resources/public" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/school/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/school/src/main/resources/${env}" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/school/src/main/resources/public" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/user/src/main/resources/${env}" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/user/src/main/resources/milk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/user/src/main/resources/public" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/wx/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/wx/src/main/resources/${env}" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/wx/src/main/resources/milk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebStudy/wx/src/main/resources/public" charset="UTF-8" />
   </component>
 </project>

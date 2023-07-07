@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.test.user.dao.UserMapper">
-    <select id="getUser" resultType="org.test.user.model.dom.UserDO">
+    <select id="getUser" resultType="org.test.user.model.UserDO">
         select *
         from user
         where id=#{id}

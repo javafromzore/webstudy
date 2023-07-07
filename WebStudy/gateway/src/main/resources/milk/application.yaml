@@ -22,8 +22,7 @@ spring:
       routes:
         #####car模块#####
         - id: car
-          uri: http://127.0.0.1:1111
-          #          lb://car
+          uri: lb://car
           predicates:
             - Path=/car/**
         #####car模块#####

@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/WebStudy.iml" filepath="$PROJECT_DIR$/.idea/WebStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/WebStudy.iml" filepath="$PROJECT_DIR$/WebStudy/WebStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/car/car.iml" filepath="$PROJECT_DIR$/WebStudy/car/car.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/carApi/carApi.iml" filepath="$PROJECT_DIR$/WebStudy/carApi/carApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/config/config.iml" filepath="$PROJECT_DIR$/WebStudy/config/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/framework/framework.iml" filepath="$PROJECT_DIR$/WebStudy/framework/framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/gateway/gateway.iml" filepath="$PROJECT_DIR$/WebStudy/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/framework/study-aop-start/study-aop-start.iml" filepath="$PROJECT_DIR$/WebStudy/framework/study-aop-start/study-aop-start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/framework/study-common-start/study-common-start.iml" filepath="$PROJECT_DIR$/WebStudy/framework/study-common-start/study-common-start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/framework/study-kafka-start/study-kafka-start.iml" filepath="$PROJECT_DIR$/WebStudy/framework/study-kafka-start/study-kafka-start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/framework/study-mybatis-start/study-mybatis-start.iml" filepath="$PROJECT_DIR$/WebStudy/framework/study-mybatis-start/study-mybatis-start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/framework/study-redis-start/study-redis-start.iml" filepath="$PROJECT_DIR$/WebStudy/framework/study-redis-start/study-redis-start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/framework/study-web-start/study-web-start.iml" filepath="$PROJECT_DIR$/WebStudy/framework/study-web-start/study-web-start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/framework/study-wx-start/study-wx-start.iml" filepath="$PROJECT_DIR$/WebStudy/framework/study-wx-start/study-wx-start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/framework/study-zookeeper-start/study-zookeeper-start.iml" filepath="$PROJECT_DIR$/WebStudy/framework/study-zookeeper-start/study-zookeeper-start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/user/user.iml" filepath="$PROJECT_DIR$/WebStudy/user/user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebStudy/wx/wx.iml" filepath="$PROJECT_DIR$/WebStudy/wx/wx.iml" />
     </modules>
   </component>
 </project>
