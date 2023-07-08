@@ -45,11 +45,16 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "F:/Sources/WebStudy"
+    "last_opened_file_path": "F:/Sources/WebStudy/binarywang",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Sources\WebStudy\WebStudy\framework\study-redis-start\src\main\resources\META-INF.spring" />
+      <recent name="F:\Sources\WebStudy\WebStudy\framework\study-redis-start\src\main\resources" />
       <recent name="F:\Sources\WebStudy\WebStudy\framework\study-common-start\src\main\java\org\test\common\util" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -60,7 +65,7 @@
       <recent name="org.test.car.model.vo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UserApp">
+  <component name="RunManager" selected="Application.WXApp">
     <configuration name="CarApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.test.car.CarApp" />
       <module name="car" />
@@ -100,11 +105,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WXApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.test.wx.WXApp" />
+      <module name="wx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.test.wx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UserApp" />
-        <item itemvalue="Application.CarApp" />
+        <item itemvalue="Application.WXApp" />
         <item itemvalue="Application.GatewayApp" />
+        <item itemvalue="Application.CarApp" />
+        <item itemvalue="Application.UserApp" />
       </list>
     </recent_temporary>
   </component>
@@ -131,6 +150,11 @@
           <url>file://$PROJECT_DIR$/WebStudy/framework/study-common-start/src/main/java/org/test/common/util/ArrayUtil.java</url>
           <line>8</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/WebStudy/wx/src/main/java/org/test/wx/controller/WXController.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -8,41 +8,11 @@ spring:
 
 
 
-########################################数据库配置########################################
-  datasource:
-    driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://127.0.0.1:3306/zenofsword_car?useUnicode=true&useSSL=false&characterEncoding=utf8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
-    username: root
-    password: 123456
-
-
-
-########################################mybatis配置########################################
-mybatis-plus:
-  configuration:
-    ###这是什么？日志路径如何配置？
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-    mapper-locations: classpath:/mapper/*Mapper.xml
-    lazyLoadingEnabled: true
-    aggressiveLazyLoad: true
-    cache-enabled: true
-
-
-
-########################################pagehelper配置########################################
-pagehelper:
-  helper-dialect: mysql
-#  reasonable: true
-#  support-methods-arguments: true
-#  params: count
-
-
-
-########################################pagehelper配置########################################
+########################################wx配置########################################
 wx:
   mp:
-    app-id: wx35d124561ba3b3fc
-#    secret: 123456
+    app-id: wx5553e8da52fcd86d
+    secret: bc2be8260fcef32b7a11b2d1c5a99c1f
     token: 123456
 
 

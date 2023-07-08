@@ -48,6 +48,11 @@
             <groupId>org.test</groupId>
             <artifactId>carApi</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.test</groupId>
+            <artifactId>study-redis-start</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

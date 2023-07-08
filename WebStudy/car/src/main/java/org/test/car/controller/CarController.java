@@ -24,4 +24,9 @@ public class CarController {
     public Result<List<CarVO>> listByIds(@RequestBody IdDTO idDTO) {
         return Result.succeed(carService.listByIds(idDTO));
     }
+
+    @PostMapping("/redisTest")
+    public Result<CarVO> redisTest(@RequestParam("id") long id) {
+        return Result.succeed(carService.redisTest(id));
+    }
 }

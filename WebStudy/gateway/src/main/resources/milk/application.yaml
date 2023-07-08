@@ -30,3 +30,7 @@ spring:
           uri: lb://user
           predicates:
             - Path=/user/**
+        - id: wx
+          uri: lb://wx
+          predicates:
+            - Path=/wx/**

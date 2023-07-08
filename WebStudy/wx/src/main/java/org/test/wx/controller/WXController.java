@@ -26,7 +26,7 @@ public class WXController {
     @Autowired
     private WxMpMessageRouter wxMpMessageRouter;
 
-    @PostMapping(value = "message", produces = "application/xml; charset=UTF-8")
+    @PostMapping(value = "/message", produces = "application/xml; charset=UTF-8")
     public String test(@RequestBody String requestBody,
                        @RequestParam("signature") String signature,
                        @RequestParam("timestamp") String timestamp,
@@ -41,7 +41,7 @@ public class WXController {
         return wxMpXmlOutMessage==null?"":wxMpXmlOutMessage.toXml();
     }
 
-    @GetMapping("createMenu")
+    @GetMapping("/createMenu")
     public String createMenu() throws WxErrorException {
         WxMenu menu=new WxMenu();
         WxMenuButton buttonA=new WxMenuButton();
@@ -68,5 +68,12 @@ public class WXController {
         menu.getButtons().add(buttonA);
         menu.getButtons().add(buttonB);
         return wxMpService.getMenuService().menuCreate(menu);
+    }
+
+
+    @GetMapping("/test")
+    public String test() throws WxErrorException {
+        System.out.println(this.wxMpService.getWxMpConfigStorage().getAppId());
+        return  this.wxMpService.getAccessToken();
     }
 }

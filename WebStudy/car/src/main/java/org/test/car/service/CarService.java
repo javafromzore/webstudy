@@ -9,4 +9,6 @@ public interface CarService {
     CarVO getCar(long id);
 
     List<CarVO> listByIds(IdDTO idDTO);
+
+    CarVO redisTest(long id);
 }

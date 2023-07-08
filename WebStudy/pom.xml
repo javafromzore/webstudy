@@ -117,6 +117,12 @@
                 <artifactId>carApi</artifactId>
                 <version>${this.project.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.test</groupId>
+                <artifactId>study-redis-start</artifactId>
+                <version>${this.project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
