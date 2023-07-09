@@ -26,11 +26,12 @@ public class WXController {
     @Autowired
     private WxMpMessageRouter wxMpMessageRouter;
 
-    @PostMapping(value = "/message", produces = "application/xml; charset=UTF-8")
+    @GetMapping(value = "/message", produces = "application/xml; charset=UTF-8")
     public String test(@RequestBody String requestBody,
                        @RequestParam("signature") String signature,
                        @RequestParam("timestamp") String timestamp,
-                       @RequestParam("nonce") String nonce) throws IllegalAccessException {
+                       @RequestParam("nonce") String nonce,
+                       @RequestParam("echostr") String echostr) throws IllegalAccessException {
         log.info("有消息发过来了");
         if (!wxMpService.checkSignature(timestamp, nonce, signature)){
             throw new IllegalAccessException("请求有问题");
@@ -38,7 +39,7 @@ public class WXController {
         WxMpXmlMessage wxMpXmlMessage=WxMpXmlMessage.fromXml(requestBody);
         WxMpXmlOutMessage wxMpXmlOutMessage;
         wxMpXmlOutMessage=wxMpMessageRouter.route(wxMpXmlMessage);
-        return wxMpXmlOutMessage==null?"":wxMpXmlOutMessage.toXml();
+        return echostr;
     }
 
     @GetMapping("/createMenu")

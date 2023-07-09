@@ -19,6 +19,8 @@
         <module>gateway</module>
         <module>config</module>
         <module>carApi</module>
+        <module>framework/study-pay-start</module>
+        <module>pay</module>
     </modules>
 
     <properties>
@@ -30,7 +32,6 @@
         <spring.boot.version>2.7.8</spring.boot.version>
         <this.project.version>1.0-SNAPSHOT</this.project.version>
         <lombok.version>1.18.24</lombok.version>
-        <junit-jupiter.version>5.8.2</junit-jupiter.version>
     </properties>
 
     <dependencyManagement>
@@ -123,21 +124,27 @@
                 <artifactId>study-redis-start</artifactId>
                 <version>${this.project.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.test</groupId>
+                <artifactId>study-pay-start</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <!--通用工具-->
     <dependencies>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>2.2.13.RELEASE</version>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>${junit-jupiter.version}</version>
-            <scope>test</scope>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
 
         <!--mapstruct核心-->

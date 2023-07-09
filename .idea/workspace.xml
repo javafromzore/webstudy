@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -30,6 +31,11 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
     <option name="enabledProfiles">
       <list>
         <option value="milk" />
@@ -45,7 +51,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "F:/Sources/WebStudy/binarywang",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "F:/Sources/WebStudy/WebStudy/framework/study-pay-start/src/main/resources/META-INF/spring",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -53,19 +60,25 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Sources\WebStudy\WebStudy\framework\study-pay-start\src\main\resources\META-INF\spring" />
+      <recent name="F:\Sources\WebStudy\WebStudy\pay\src\main\java\org\test\pay" />
       <recent name="F:\Sources\WebStudy\WebStudy\framework\study-redis-start\src\main\resources\META-INF.spring" />
       <recent name="F:\Sources\WebStudy\WebStudy\framework\study-redis-start\src\main\resources" />
       <recent name="F:\Sources\WebStudy\WebStudy\framework\study-common-start\src\main\java\org\test\common\util" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Sources\WebStudy\WebStudy\pay\src\main\resources\milk" />
+      <recent name="F:\Sources\WebStudy\WebStudy\pay\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.test.pay" />
       <recent name="org.test.car.vo" />
       <recent name="org.test.user.service.impl" />
       <recent name="org.test.user.service" />
       <recent name="org.test.user.controller" />
-      <recent name="org.test.car.model.vo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WXApp">
+  <component name="RunManager" selected="Application.PayApp">
     <configuration name="CarApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.test.car.CarApp" />
       <module name="car" />
@@ -85,6 +98,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.test.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PayApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.test.pay.PayApp" />
+      <module name="pay" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.test.pay.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,6 +146,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PayApp" />
         <item itemvalue="Application.WXApp" />
         <item itemvalue="Application.GatewayApp" />
         <item itemvalue="Application.CarApp" />
@@ -153,8 +180,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/WebStudy/wx/src/main/java/org/test/wx/controller/WXController.java</url>
-          <line>45</line>
+          <line>46</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/WebStudy/wx/src/main/java/org/test/wx/controller/WXController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

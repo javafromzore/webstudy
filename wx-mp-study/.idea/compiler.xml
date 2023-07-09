@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="wx-java-channel-spring-boot-starter" />
+        <module name="wx-java-open-spring-boot-starter" />
+        <module name="wx-java-pay-spring-boot-starter" />
+        <module name="wx-java-miniapp-spring-boot-starter" />
+        <module name="weixin-java-qidian" />
+        <module name="weixin-java-miniapp" />
+        <module name="weixin-java-open" />
+        <module name="weixin-java-pay" />
+        <module name="wx-java-mp-spring-boot-starter" />
+        <module name="weixin-java-cp" />
+        <module name="weixin-java-common" />
+        <module name="wx-java-qidian-spring-boot-starter" />
+        <module name="weixin-java-channel" />
+        <module name="wx-java-cp-spring-boot-starter" />
+        <module name="weixin-java-mp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="weixin-graal" target="1.8" />
+      <module name="weixin-java-channel" target="1.8" />
+      <module name="weixin-java-common" target="1.8" />
+      <module name="weixin-java-cp" target="1.8" />
+      <module name="weixin-java-miniapp" target="1.8" />
+      <module name="weixin-java-mp" target="1.8" />
+      <module name="weixin-java-open" target="1.8" />
+      <module name="weixin-java-pay" target="1.8" />
+      <module name="weixin-java-qidian" target="1.8" />
+      <module name="wx-java" target="1.8" />
+      <module name="wx-java-channel-spring-boot-starter" target="1.8" />
+      <module name="wx-java-cp-spring-boot-starter" target="1.8" />
+      <module name="wx-java-miniapp-spring-boot-starter" target="1.8" />
+      <module name="wx-java-mp-spring-boot-starter" target="1.8" />
+      <module name="wx-java-open-spring-boot-starter" target="1.8" />
+      <module name="wx-java-pay-spring-boot-starter" target="1.8" />
+      <module name="wx-java-qidian-spring-boot-starter" target="1.8" />
+      <module name="wx-java-spring-boot-starters" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

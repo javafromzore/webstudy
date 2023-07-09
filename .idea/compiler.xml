@@ -11,12 +11,14 @@
         <module name="wx" />
         <module name="study-common-start" />
         <module name="study-aop-start" />
+        <module name="pay" />
         <module name="study-zookeeper-start" />
         <module name="study-wx-start" />
         <module name="study-redis-start" />
         <module name="study-web-start" />
         <module name="car" />
         <module name="study-mybatis-start" />
+        <module name="study-pay-start" />
         <module name="carApi" />
         <module name="user" />
         <module name="config" />
@@ -24,23 +26,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="car" target="19" />
-      <module name="carApi" target="19" />
-      <module name="config" target="19" />
-      <module name="framework" target="19" />
-      <module name="gateway" target="19" />
       <module name="school" target="19" />
-      <module name="study-aop-start" target="19" />
-      <module name="study-common-start" target="19" />
-      <module name="study-kafka-start" target="19" />
-      <module name="study-mybatis-start" target="19" />
-      <module name="study-redis-start" target="19" />
-      <module name="study-web-start" target="19" />
-      <module name="study-wx-start" target="19" />
-      <module name="study-zookeeper-start" target="19" />
-      <module name="user" target="19" />
-      <module name="WebStudy" target="19" />
-      <module name="wx" target="19" />
     </bytecodeTargetLevel>
   </component>
 </project>

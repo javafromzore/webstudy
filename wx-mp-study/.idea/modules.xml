@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/weixin-graal/weixin-graal.iml" filepath="$PROJECT_DIR$/WxJava-develop/weixin-graal/weixin-graal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/weixin-java-channel/weixin-java-channel.iml" filepath="$PROJECT_DIR$/WxJava-develop/weixin-java-channel/weixin-java-channel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/weixin-java-common/weixin-java-common.iml" filepath="$PROJECT_DIR$/WxJava-develop/weixin-java-common/weixin-java-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/weixin-java-cp/weixin-java-cp.iml" filepath="$PROJECT_DIR$/WxJava-develop/weixin-java-cp/weixin-java-cp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/weixin-java-miniapp/weixin-java-miniapp.iml" filepath="$PROJECT_DIR$/WxJava-develop/weixin-java-miniapp/weixin-java-miniapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/weixin-java-mp/weixin-java-mp.iml" filepath="$PROJECT_DIR$/WxJava-develop/weixin-java-mp/weixin-java-mp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/weixin-java-open/weixin-java-open.iml" filepath="$PROJECT_DIR$/WxJava-develop/weixin-java-open/weixin-java-open.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/weixin-java-pay/weixin-java-pay.iml" filepath="$PROJECT_DIR$/WxJava-develop/weixin-java-pay/weixin-java-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/weixin-java-qidian/weixin-java-qidian.iml" filepath="$PROJECT_DIR$/WxJava-develop/weixin-java-qidian/weixin-java-qidian.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/wx-java.iml" filepath="$PROJECT_DIR$/WxJava-develop/wx-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-channel-spring-boot-starter/wx-java-channel-spring-boot-starter.iml" filepath="$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-channel-spring-boot-starter/wx-java-channel-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-cp-spring-boot-starter/wx-java-cp-spring-boot-starter.iml" filepath="$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-cp-spring-boot-starter/wx-java-cp-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-miniapp-spring-boot-starter/wx-java-miniapp-spring-boot-starter.iml" filepath="$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-miniapp-spring-boot-starter/wx-java-miniapp-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-mp-spring-boot-starter/wx-java-mp-spring-boot-starter.iml" filepath="$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-mp-spring-boot-starter/wx-java-mp-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-open-spring-boot-starter/wx-java-open-spring-boot-starter.iml" filepath="$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-open-spring-boot-starter/wx-java-open-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-pay-spring-boot-starter/wx-java-pay-spring-boot-starter.iml" filepath="$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-pay-spring-boot-starter/wx-java-pay-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-qidian-spring-boot-starter/wx-java-qidian-spring-boot-starter.iml" filepath="$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-qidian-spring-boot-starter/wx-java-qidian-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-spring-boot-starters.iml" filepath="$PROJECT_DIR$/WxJava-develop/spring-boot-starters/wx-java-spring-boot-starters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/wx-mp-study.iml" filepath="$PROJECT_DIR$/.idea/wx-mp-study.iml" />
+    </modules>
+  </component>
+</project>

@@ -8,6 +8,8 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 
 @Configuration
 public class RedisAutoConfig {
+
+    //自己对RedisTemplate进行封装（自定义）
     @Bean
     public RedisTemplate<String, Object>redisTemplate(RedisConnectionFactory factory){
         RedisTemplate<String, Object> redisTemplate=new RedisTemplate<>();
