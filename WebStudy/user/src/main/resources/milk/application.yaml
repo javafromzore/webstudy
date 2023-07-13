@@ -10,24 +10,9 @@ spring:
 
 
 
-  ########################################zookeeper配置########################################
-  zookeeper:
-    address: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183
-    timeout: 4000
-
-
-
 ########################################数据库配置########################################
   datasource:
     driver-class-name: org.gjt.mm.mysql.Driver
     url: jdbc:mysql://127.0.0.1:3306/study-user?useUnicode=true&useSSL=false&characterEncoding=utf8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
     username: root
     password: 123456
-
-
-
-########################################自定义########################################
-web-study:
-  zookeeper:
-    address: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183
-    timeout: 4000

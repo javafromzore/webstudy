@@ -16,6 +16,7 @@ import org.test.redis.consts.RedisKeyConsts;
 import org.test.user.vo.user.UserVO;
 import org.test.user.service.UserService;
 import org.test.common.model.vo.Result;
+import org.test.zookeeper.config.ZooKeeperProperties;
 import org.test.zookeeper.lock.LockSample;
 
 import java.io.IOException;
@@ -25,6 +26,7 @@ import java.util.Objects;
 @RestController
 @RequestMapping("/user/user")
 public class UserController implements Serializable{
+//    @Autowired在初始化ioc时作用，用于注入对象
     @Autowired
     @Qualifier("redisTemplate")
     private RedisTemplate template;

@@ -10,9 +10,6 @@ import java.util.Collections;
 import java.util.List;
 
 public class LockSample {
-    @Autowired
-    private ZooKeeperProperties properties;
-
     private ZooKeeper client;
     private static final String LOCK_ROOT_PATH="/Locks";
     private static final String LOCK_NODE_NAME="Lock_";
@@ -31,7 +28,7 @@ public class LockSample {
     };
 
     public LockSample() throws IOException {
-        client=new ZooKeeper(properties.getAddress(), properties.getTimeout(),
+        client=new ZooKeeper("127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183", 10000000,
                 //todo 既然后续可以自定义监视器，那么这一个监视器的作用是什么？
                 watchedEvent -> {
             if (watchedEvent.getState()== Watcher.Event.KeeperState.Disconnected){

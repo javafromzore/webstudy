@@ -35,19 +35,24 @@
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="milk" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="2SKAsSNYkwkOmsFIm3SQQmsR9Bo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "F:/Sources/zenofsword/zenofsword-back1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Sources/zenofsword/zenofsword-back1&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Sources\WebStudy\WebStudy\framework\study-zookeeper-start\src\main\resources\META-INF\spring" />
@@ -140,9 +145,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/framework/study-zookeeper-start/src/main/java/org/test/zookeeper/config/ZooKeeperAutoConfig.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/framework/study-zookeeper-start/src/main/java/org/test/zookeeper/lock/LockSample.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/framework/study-zookeeper-start/src/main/java/org/test/zookeeper/lock/LockSample.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
