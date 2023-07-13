@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -43,10 +44,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "F:/Sources/zenofsword/zenofsword-back1"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Sources\WebStudy\WebStudy\framework\study-zookeeper-start\src\main\resources\META-INF\spring" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.test.redis" />
     </key>
@@ -100,11 +105,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisTest.redisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="study-redis-start" />
+    <configuration name="TicketSeller.ticketSeller" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="study-zookeeper-start" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RedisTest" />
-      <option name="METHOD_NAME" value="redisTest" />
+      <option name="MAIN_CLASS_NAME" value="TicketSeller" />
+      <option name="METHOD_NAME" value="ticketSeller" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,9 +119,9 @@
       <list>
         <item itemvalue="Application.UserApp" />
         <item itemvalue="Application.GatewayApp" />
+        <item itemvalue="JUnit.TicketSeller.ticketSeller" />
         <item itemvalue="JUnit.RedisTest" />
         <item itemvalue="Application.RedisTestApp" />
-        <item itemvalue="JUnit.RedisTest.redisTest" />
       </list>
     </recent_temporary>
   </component>
@@ -130,6 +135,17 @@
       <updated>1688885106937</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/framework/study-zookeeper-start/src/main/java/org/test/zookeeper/config/ZooKeeperAutoConfig.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/WebStudy$RedisTestApp.ic" NAME="RedisTestApp Coverage Results" MODIFIED="1688886768350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -5,9 +5,9 @@ import lombok.NoArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
-@ConfigurationProperties(prefix = "web-study.zookeeper.configuration-properties")
+@ConfigurationProperties(prefix = "web-study.zookeeper")
 @Data
 public class ZooKeeperProperties {
-    private String serverUrl;
-    private int sessionTimeOut;
+    private String address;
+    private int timeout;
 }
