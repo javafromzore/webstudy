@@ -1,9 +1,12 @@
 package org.test.common.model.vo;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.test.common.enums.CodeEnum;
 import org.test.common.util.LanguageUtil;
 
 import java.io.Serializable;
+
 
 public class Result<T> implements Serializable {
     private T data;

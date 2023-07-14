@@ -52,7 +52,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "F:/Sources/WebStudy/WebStudy/framework/study-pay-start/src/main/resources/META-INF/spring",
+    "last_opened_file_path": "F:/Sources/study",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -60,11 +60,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Sources\WebStudy\WebStudy" />
       <recent name="F:\Sources\WebStudy\WebStudy\framework\study-pay-start\src\main\resources\META-INF\spring" />
       <recent name="F:\Sources\WebStudy\WebStudy\pay\src\main\java\org\test\pay" />
       <recent name="F:\Sources\WebStudy\WebStudy\framework\study-redis-start\src\main\resources\META-INF.spring" />
       <recent name="F:\Sources\WebStudy\WebStudy\framework\study-redis-start\src\main\resources" />
-      <recent name="F:\Sources\WebStudy\WebStudy\framework\study-common-start\src\main\java\org\test\common\util" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Sources\WebStudy\WebStudy\pay\src\main\resources\milk" />
@@ -78,8 +78,8 @@
       <recent name="org.test.user.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PayApp">
-    <configuration name="CarApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.UserApp (1)">
+    <configuration name="CarApp" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.test.car.CarApp" />
       <module name="car" />
       <extension name="coverage">
@@ -92,7 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatewayApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="GatewayApp" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.test.gateway.GatewayApp" />
       <module name="gateway" />
       <extension name="coverage">
@@ -105,7 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PayApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="PayApp" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.test.pay.PayApp" />
       <module name="pay" />
       <extension name="coverage">
@@ -118,7 +118,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="UserApp (1)" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.test.user.UserApp" />
+      <module name="user2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.test.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApp" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.test.user.UserApp" />
       <module name="user" />
       <extension name="coverage">
@@ -131,28 +144,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WXApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.test.wx.WXApp" />
-      <module name="wx" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.test.wx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.PayApp" />
-        <item itemvalue="Application.WXApp" />
-        <item itemvalue="Application.GatewayApp" />
-        <item itemvalue="Application.CarApp" />
-        <item itemvalue="Application.UserApp" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -187,6 +178,11 @@
           <url>file://$PROJECT_DIR$/WebStudy/wx/src/main/java/org/test/wx/controller/WXController.java</url>
           <line>34</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/WebStudy/car/src/main/java/org/test/car/controller/CarController.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

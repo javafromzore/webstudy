@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="study-kafka-start" />
         <module name="wx" />
+        <module name="user2" />
         <module name="study-common-start" />
         <module name="study-aop-start" />
         <module name="pay" />
@@ -17,16 +18,22 @@
         <module name="study-redis-start" />
         <module name="study-web-start" />
         <module name="car" />
+        <module name="userApi" />
+        <module name="userApi2" />
         <module name="study-mybatis-start" />
         <module name="study-pay-start" />
         <module name="carApi" />
-        <module name="user" />
         <module name="config" />
+        <module name="user" />
         <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="school" target="19" />
+      <module name="user (1)" target="19" />
+      <module name="user (2)" target="19" />
+      <module name="userApi (1)" target="19" />
+      <module name="userApi (2)" target="19" />
     </bytecodeTargetLevel>
   </component>
 </project>

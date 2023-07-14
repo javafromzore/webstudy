@@ -1,6 +1,6 @@
 import org.apache.zookeeper.KeeperException;
 import org.junit.jupiter.api.Test;
-import org.test.zookeeper.lock.LockSample;
+import org.test.zookeeper.lock.ZooKeeperLock;
 
 import java.io.IOException;
 
@@ -20,7 +20,7 @@ public class TicketSeller {
 
 
     public void sellTicketWithLock() throws KeeperException, InterruptedException, IOException {
-        LockSample lock = new LockSample();
+        ZooKeeperLock lock = new ZooKeeperLock();
         lock.acquireLock();
         sell();
         lock.releaseLock();

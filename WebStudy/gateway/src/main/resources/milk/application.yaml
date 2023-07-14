@@ -25,12 +25,18 @@ spring:
           uri: lb://car
           predicates:
             - Path=/car/**
-        #####car模块#####
+        #####user模块#####
         - id: user
           uri: lb://user
           predicates:
             - Path=/user/**
+        #####wx模块#####
         - id: wx
           uri: lb://wx
           predicates:
             - Path=/wx/**
+        #####user模块#####
+        - id: user2
+          uri: lb://user2
+          predicates:
+            - Path=/user2/**

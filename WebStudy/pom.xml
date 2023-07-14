@@ -16,11 +16,14 @@
         <module>framework/study-wx-start</module>
         <module>wx</module>
         <module>user</module>
+        <module>user2</module>
         <module>gateway</module>
         <module>config</module>
         <module>carApi</module>
         <module>framework/study-pay-start</module>
         <module>pay</module>
+        <module>userApi</module>
+        <module>userApi2</module>
     </modules>
 
     <properties>

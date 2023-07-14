@@ -4,29 +4,24 @@ import org.apache.zookeeper.KeeperException;
 import org.redisson.api.RLock;
 import org.redisson.api.RQueue;
 import org.redisson.api.RedissonClient;
-import org.redisson.client.RedisClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
-import org.springframework.context.annotation.Scope;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.*;
 import org.test.redis.consts.RedisKeyConsts;
 import org.test.user.vo.user.UserVO;
 import org.test.user.service.UserService;
 import org.test.common.model.vo.Result;
-import org.test.zookeeper.config.ZooKeeperProperties;
-import org.test.zookeeper.lock.LockSample;
+import org.test.zookeeper.lock.JusticeLock;
+import org.test.zookeeper.lock.UnJusticeLock;
 
 import java.io.IOException;
 import java.io.Serializable;
-import java.util.Objects;
 
 @RestController
 @RequestMapping("/user/user")
-public class UserController implements Serializable{
-//    @Autowired在初始化ioc时作用，用于注入对象
+public class UserController implements Serializable {
+    //    @Autowired在初始化ioc时作用，用于注入对象
     @Autowired
     @Qualifier("redisTemplate")
     private RedisTemplate template;
@@ -50,13 +45,13 @@ public class UserController implements Serializable{
 
     @GetMapping("/redisTest")
     public Result<String> redisTest() {
-        RLock rLock=client.getLock(RedisKeyConsts.GOODS_COUNT_LOCK.getKey());
+        RLock rLock = client.getLock(RedisKeyConsts.GOODS_COUNT_LOCK.getKey());
         try {
             rLock.lock();
-            int number=Integer.parseInt((String) template.opsForValue().get(RedisKeyConsts.GOODS_COUNT.getKey()));
+            int number = Integer.parseInt((String) template.opsForValue().get(RedisKeyConsts.GOODS_COUNT.getKey()));
             number--;
             template.opsForValue().set(RedisKeyConsts.GOODS_COUNT.getKey(), number);
-        }catch (RuntimeException e){
+        } catch (RuntimeException e) {
             throw new RuntimeException("没有货了");
         } finally {
             rLock.unlock();
@@ -78,44 +73,46 @@ public class UserController implements Serializable{
     @GetMapping("/redisMQConsumerTest")
     public Result<String> redisMQConsumerTest() {
         RQueue<String> queue = client.getQueue("Queue");
-        String s=queue.poll();
-        String s1=queue.poll();
-        String s2=queue.poll();
-        String s3=queue.poll();
-        String s4=queue.poll();
-        String s5=queue.poll();
+        String s = queue.poll();
+        String s1 = queue.poll();
+        String s2 = queue.poll();
+        String s3 = queue.poll();
+        String s4 = queue.poll();
+        String s5 = queue.poll();
         return Result.succeed(s5);
     }
 
     @GetMapping("/ticketSeller")
     public Result ticketSeller() throws IOException, InterruptedException, KeeperException {
         TicketSeller ticketSeller = new TicketSeller();
-        for(int i=0;i<1000;i++){
+        for (int i = 0; i < 2; i++) {
             ticketSeller.sellTicketWithLock();
         }
         return Result.succeed();
     }
 
-    private class TicketSeller{
+    private class TicketSeller {
         private void sell() {
-            System.out.println("售票开始");
             // 线程随机休眠数毫秒，模拟现实中的费时操作
             int sleepMillis = (int) (Math.random() * 2000);
             try {
+                //调度器切换线程
                 //代表复杂逻辑执行了一段时间
                 Thread.sleep(sleepMillis);
+                System.out.println("售出一张票");
+                int newTickNums = (Integer) template.opsForValue().get("tickNums") - 1;
+                template.opsForValue().set("tickNums", newTickNums);
+                System.out.println("剩余" + newTickNums + "张票");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println("售票结束");
         }
 
-
         public void sellTicketWithLock() throws KeeperException, InterruptedException, IOException {
-            LockSample lock = new LockSample();
-            lock.acquireLock();
+            UnJusticeLock lock=new UnJusticeLock();
+            lock.lock();
             sell();
-            lock.releaseLock();
+            lock.unLock();
         }
     }
 }
