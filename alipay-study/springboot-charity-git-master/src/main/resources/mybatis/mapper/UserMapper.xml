@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.hhb.mapper.UserMapper">
+
+    <select id="getLoginUser" resultType="com.hhb.pojo.User">
+        select * from db_charity.user where user_account=#{account} and user_password=#{password}
+    </select>
+
+    <update id="modifyUser" parameterType="com.hhb.pojo.User">
+        update db_charity.user
+        set user_name=#{user_name},user_gender=#{user_gender},user_age=#{user_age},user_phone=#{user_phone}
+        where user_id=#{user_id}
+    </update>
+
+    <insert id="registerUser" parameterType="com.hhb.pojo.User">
+        insert into db_charity.user(user_name, user_account, user_password, user_type, user_gender, user_age, user_phone, user_donate)
+        values (#{user_name},#{user_account},#{user_password},#{user_type},#{user_gender},#{user_age},#{user_phone},#{user_donate})
+    </insert>
+</mapper>

@@ -40,3 +40,13 @@ spring:
           uri: lb://user2
           predicates:
             - Path=/user2/**
+        #####pay模块#####
+        - id: pay
+          uri: lb://pay
+          predicates:
+            - Path=/pay/**
+        #####system模块#####
+        - id: system模块
+          uri: lb://system
+          predicates:
+            - Path=/system/**

@@ -1,0 +1,54 @@
+
+<html lang="en"   xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+    <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript" th:src="@{/js/jquery-3.4.1.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.js}"></script>
+    <style type="text/css">
+        #tips{
+            text-align: center;
+            padding-top: 150px;
+
+        }
+        #tips div{
+            width: 30%;
+            margin: auto;
+        }
+        #tips p{
+            padding: 25px   0px;
+            border-radius: 5px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>提示信息</legend>
+</fieldset>
+
+<div id="tips" >
+    <div th:if="${flag eq 1}">
+        <!--  如果标志位为真      -->
+<!--        <c:if test="${Flag==true}">-->
+            <p class="bg-success" th:text="${msg}+'成功'">
+                <span class="glyphicon glyphicon-ok-circle" ></span>
+            </p>
+<!--        </c:if>-->
+    </div>
+
+    <div th:if="${flag eq 0}">
+        <!--  如果标志位为假      -->
+
+        <!--        <c:if test="${Flag==false}">-->
+        <p class="bg-danger" th:text="${msg}+'失败'">
+            <span class="glyphicon glyphicon-remove-circle"></span>
+        </p>
+        <!--        </c:if>-->
+    </div>
+</div>
+</body>
+</html>

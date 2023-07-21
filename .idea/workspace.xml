@@ -78,7 +78,7 @@
       <recent name="org.test.user.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UserApp (1)">
+  <component name="RunManager" selected="JUnit.KafKaTest.kafkaTest">
     <configuration name="CarApp" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.test.car.CarApp" />
       <module name="car" />
@@ -144,6 +144,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KafKaTest.kafkaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="study-kafka-start" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="KafKaTest" />
+      <option name="METHOD_NAME" value="kafkaTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.KafKaTest.kafkaTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

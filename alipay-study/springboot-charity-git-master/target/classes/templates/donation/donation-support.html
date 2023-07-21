@@ -1,0 +1,213 @@
+<html lang="en"   xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}">
+    <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+
+    <style type="text/css">
+        #container{
+            width: 650px;
+            height: 430px;
+            margin: 30px auto;
+        }
+    </style>
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo" style="font-weight: bold; font-size: 18px; margin-left: 15px" >
+            慈善公益平台
+        </div>
+
+        <!-- 头部区域（可配合layui已有的水平导航） -->
+
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;" >
+                    <img src="${pageContext.request.contextPath}/${sessionScope.managerSession.img}" class="layui-nav-img">
+                    [[${session.loginUser.user_name}]]
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">基本资料</a></dd>
+                    <dd><a href="">安全设置</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a th:href="@{/user/logout}">注销</a></li>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="" href="javascript:;">个人空间</a>
+                    <dl class="layui-nav-child">
+                        <dd><a th:href="@{/user/info}" target="mainFrame">个人信息</a></dd>
+                        <dd>
+                            <a th:href="@{/donaItem/myItem}" target="mainFrame">
+                                我的贡献
+                            </a>
+                        </dd>
+                        <dd>
+                            <a th:href="@{/dona/myDona}" target="mainFrame">我的求助</a>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a href="javascript:;">爱心项目</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="${pageContext.request.contextPath }/goods.do?method=typelist" target="mainFrame">
+                            ？？？</a>
+                        </dd>
+                        <dd><a href="${pageContext.request.contextPath }/goods.do?method=goodslist&pageNum=1&typeid=0" target="mainFrame">
+                            ？？？</a>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a href="javascript:;">公开募捐</a>
+                    <dl class="layui-nav-child">
+                        <dd><a th:href="@{/dona/queryState_1}">
+                            参与募捐</a>
+                        </dd>
+                        <dd><a th:href="@{/dona/addpage}" target="mainFrame">
+                            我要求助</a>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a href="javascript:;">捐款列表</a>
+                    <dl class="layui-nav-child">
+                        <dd><a th:href="@{/donaItem/allItem}" target="mainFrame">
+                            捐款时讯</a>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a href="javascript:;">公益排行</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="${pageContext.request.contextPath }/goods.do?method=typelist" target="mainFrame">
+                            排行榜</a>
+                        </dd>
+                    </dl>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <div style="padding: 15px;" >
+            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+                <legend>我要支持</legend>
+            </fieldset>
+
+            <div id="container">
+                <!--    <form class="layui-form" th:action="@{/donaItem/support}" method="post"-->
+                <!--          enctype="multipart/form-data" onsubmit="return checkInformation()">-->
+                <form class="layui-form" th:action="@{/pay/alipay}" method="post"
+                      enctype="multipart/form-data" onsubmit="return checkInformation()">
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">募捐项目名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="dona_name" id="dona_name"  disabled="disabled"
+                                   th:value="${dona.getDona_name()}" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">求助者</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="user_name" id="user_name"  disabled="disabled"
+                                   th:value="${user_name}" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">求助金额</label>
+                        <div class="layui-input-block">
+                            <input type="text" id="total" name="total"  disabled="disabled"
+                                   th:value="${dona.getDona_total()}" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">已筹善款</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="current" id="current"  disabled="disabled"
+                                   th:value="${dona.getDona_current()}" class="layui-input">
+                        </div>
+                    </div>
+
+                    <!--   捐款金额这里进行判断,捐款金额是否小于还需筹集的金额  -->
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">捐款金额</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="dona_money" id="dona_money"  placeholder="请输入捐款金额"  class="layui-input">
+                        </div>
+                    </div>
+
+                    <!-- 设置隐藏域 -->
+                    <input type="hidden" name="dona_id" th:value="${dona.getDona_id()}">
+
+
+                    <div class="layui-form-item" style="margin-top: 20px;">
+                        <div class="layui-input-block">
+                            <button class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo">支持</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-footer">
+        <!-- 底部固定区域 -->
+        © 湖北大学18软三黄晗滨
+    </div>
+</div>
+
+
+<script th:inline="javascript">
+    var layer;
+    layui.use("layer",function () {
+        layer = layui.layer;
+    });
+
+    //如果数据校验通过返回true，不通过则返回false
+    function checkInformation() {
+        //捐款金额
+        var price =document.getElementById("dona_money").value;
+        var total = document.getElementById("total").value;
+        var current = document.getElementById("current").value;
+        var margin = parseFloat(total)-parseFloat(current);
+
+        if(price == ""){
+            layer.msg("请输入捐款金额！");
+            //alert("请输入捐款金额！");
+            return false;
+        }else if(parseFloat(price)<=0){
+            layer.msg("捐款金额不得小于等于0");
+            //alert("捐款金额长度必须为1-9个字符！");
+            return false;
+        }else if(parseFloat(price)>parseFloat(margin)){
+            layer.msg("捐款金额不得大于待筹善款")
+            return false;
+        }
+        return true;
+    }
+</script>
+<script type="text/javascript" th:src="@{/layui/layui.all.js}"></script>
+
+</body>
+</html>

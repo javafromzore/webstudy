@@ -18,6 +18,8 @@
         <module>study-kafka-start</module>
         <module>study-web-start</module>
         <module>study-redis-start</module>
+        <module>study-sms-start</module>
+        <module>study-mail-start</module>
     </modules>
 
     <properties>

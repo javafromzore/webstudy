@@ -1,0 +1,130 @@
+
+body{
+    /*设置背景图片*/
+    background-image: url("../images/background/back.jpg") ;
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  /*关键*/
+    background-position: center;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1600px;
+    z-index: -10;
+    zoom:1;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+    /*background-image: url("../img/logo.jpg");*/
+    background-repeat: repeat;
+    margin-left: 320px;
+    margin-top: 30px;
+}
+
+.main {
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    width: 350px;
+    height: 350px;
+    /*background: rgba(197, 211, 218, 0.3);*/
+    background: rgba(255, 255, 255,0.5);
+    border-radius: 10px;;
+    /*����css�����õ�¼����ֱ�����ڽ���,��ɾ��*/
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -230px;
+}
+
+.title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.title span {
+    font-size: 18px;
+    color: #353f42;
+}
+
+.title-msg {
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+}
+
+.title:hover{
+    cursor: default	;
+}
+
+.title-msg:hover{
+    cursor: default	;
+}
+
+.title-msg span {
+    font-size: 12px;
+    color: #707472;
+}
+
+/*输入框样式*/
+.input-content {
+    width: 100%;
+    height: 170px;
+}
+
+.input-content input {
+    width: 330px;
+    height: 40px;
+    border: 1px solid #dad9d6;
+    background: #ffffff;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+.enter-btn {
+    width: 350px;
+    height: 40px;
+    color: #fff;
+    background: #0bc5de;
+    line-height: 40px;
+    text-align: center;
+    border: 0px;
+}
+
+.foor{
+    width: 100%;
+    height: auto;
+    color: #9b9c98;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.enter-btn:hover {
+    cursor:pointer;
+    background: #1db5c9;
+}
+
+.foor div:hover {
+    cursor:pointer;
+    color: #484847;
+    font-weight: 600;
+}
+
+.left{
+    color: rgb(84,84,84);
+    float: left;
+}
+.right{
+    color: rgb(84,84,84);
+    float: right;
+}

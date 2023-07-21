@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.hhb.mapper.DonationMapper">
+
+    <insert id="addDonation" parameterType="com.hhb.pojo.Donation">
+        insert into db_charity.donation(dona_name, user_id, dona_detail, dona_state, dona_total, dona_current)
+        values (#{dona_name},#{user_id},#{dona_detail},#{dona_state},#{dona_total},#{dona_current})
+    </insert>
+
+    <select id="queryById" resultType="com.hhb.pojo.Donation">
+        select * from db_charity.donation where user_id = #{user_id}
+    </select>
+
+
+    <!-- 多表查询，结果集映射   -->
+    <!--  user表和donation表查询, 返回donation表信息和 user_name名称   -->
+    <!-- 返回是实体类为 donation02 而不是 donation   -->
+    <select id="queryState_1" resultType="com.hhb.VO.Donation02">
+        select d.*,u.user_name as user_name from donation d,db_charity.user u
+        where u.user_id=d.user_id and d.dona_state=1
+    </select>
+
+    <select id="queryByDonaid" resultType="com.hhb.pojo.Donation">
+        select * from db_charity.donation where dona_id = #{dona_id}
+    </select>
+
+    <update id="updateById" parameterType="com.hhb.pojo.Donation">
+        update db_charity.donation
+        set dona_name=#{dona_name},user_id=#{user_id},dona_detail=#{dona_detail},dona_state=#{dona_state},dona_total=#{dona_total},dona_current=#{dona_current}
+        where dona_id=#{dona_id}
+    </update>
+
+</mapper>

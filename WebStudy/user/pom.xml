@@ -67,6 +67,26 @@
             <artifactId>userApi</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.test</groupId>
+            <artifactId>study-kafka-start</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.test</groupId>
+            <artifactId>study-sms-start</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.test</groupId>
+            <artifactId>study-mail-start</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.test</groupId>
+            <artifactId>study-redis-start</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

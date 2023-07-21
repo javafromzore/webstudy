@@ -1,0 +1,180 @@
+<html  lang="en" xmlns:th="http://www.thymeleaf.org">
+<head >
+    <title>慈善平台-以公益的方式，为世界带来更多平等的机会</title>
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}" />
+    <link rel="stylesheet" th:href="@{/css/reg.css}"/>
+    <script type="text/javascript" th:src="@{/js/jquery-3.4.1.min.js}"></script>
+
+    <script th:inline="javascript">
+        //发送验证码单击事件的js
+        $(function () {
+            console.log(222);
+            $("#sendCode").click(function () {
+
+                //2、进入倒计时效果
+                if($(this).hasClass("disabled")){
+                    //什么都不做
+                }else {
+                    //1.给手机发送验证码
+                    //通过id获取input标签填入的手机号
+                    $.get("/sms/sendcode?mobile="+$("#mobile").val());
+                    timeoutChangeStyle();
+                }
+                console.log(11);
+            });
+        })
+        var num = 60;
+        function timeoutChangeStyle() {
+            $("#sendCode").attr("class","disabled");
+
+            if(num==0){
+                $("#sendCode").text("发送验证码");
+                num = 60;
+                $("#sendCode").attr("class","");
+            }else {
+                var str= num + "s 后再次发送验证码";
+                $("#sendCode").text(str);
+                setTimeout("timeoutChangeStyle()",1000);    //递归调用
+            }
+            num--;
+        }
+    </script>
+</head>
+
+<body>
+<div class="main" style="height: 600px">
+    <div class="title" style="text-align: center">
+        <span style="color:rgb(255,103,0); font-weight: bolder;font-size: 21px" >慈善公益平台-欢迎注册</span>
+    </div>
+    <div class="title-msg">
+        <span style="color: rgb(84,84,84); font-weight: bold; font-size: 15px" >请输入注册信息</span>
+
+        <label style="font-size:15px; color:red; margin-left:40px;
+        font-weight:bold; font-size:15px" th:text="${error}"></label>
+    </div>
+
+    <!--Form表单-->
+    <form th:action="@{/user/enroll}" class="login-form layui-form" method="post" novalidate onsubmit="return checkInformation()" >
+        <!--输入框-->
+        <div class="input-content">
+            <!--autoFocus-->
+            <div>
+                <input type="text" autocomplete="off"
+                       placeholder="姓名" name="name" id="name"required/>
+            </div>
+
+            <div style="margin-top: 16px">
+                <input type="text"
+                       autocomplete="off" placeholder="用户名" name="account"  id="account" required maxlength="32"/>
+            </div>
+
+            <div style="margin-top: 16px">
+                <input type="password"
+                       autocomplete="off" placeholder="注册密码" name="pwd"  id="pwd" required maxlength="32"/>
+            </div>
+
+            <div style="margin-top: 16px">
+                <input type="password"
+                       autocomplete="off" placeholder="确认密码" name="affirm_pwd"  id="affirm_pwd" required maxlength="32"/>
+            </div>
+
+            <div  class="layui-input-block" style="margin-top: 16px">
+                <select name="gender" lay-filter="aihao">
+                    <div >
+                        <option value="1" selected>男</option>
+                    </div>
+                    <div >
+                        <option value="0">女</option>
+                    </div>
+                </select>
+            </div>
+
+            <div style="margin-top: 16px">
+                <input type="text"
+                       autocomplete="off" placeholder="年龄" name="age"  id="age" required maxlength="32"/>
+            </div>
+
+            <div style="margin-top: 16px">
+                <input type="text" class="mobile"
+                       autocomplete="off" placeholder="手机号" name="mobile"  id="mobile" required maxlength="32"/>
+            </div>
+
+            <div style="margin-top: 16px">
+                <input type="text" style="width: 200px"
+                       autocomplete="off" placeholder="验证码" name="code"  id="code" required maxlength="10"/>
+                    <a id="sendCode" style="font-weight: bold">发送验证码</a>
+            </div>
+
+            <!--注册按钮-->
+            <div style="text-align: center;margin-top: 15px">
+                <button type="submit" class="layui-btn layui-btn-danger layui-btn-fluid" style="width: 100%;padding-right: 10px;background-color: rgb(255,103,0)">
+                    立即注册
+                </button>
+            </div>
+
+        </div>
+
+
+    </form>
+</div>
+<script th:inline="javascript">
+    var layer;
+    layui.use("layer",function () {
+        layer = layui.layer;
+    });
+    //如果数据校验通过返回true，不通过则返回false
+    function checkInformation() {
+        console.log(3333);
+        //1.校验姓名
+        var name =document.getElementById("name").value;
+        if(name == ""){
+            layer.msg("请输入姓名！");
+            return false;
+        }
+
+        //2.校验用户名
+        var account =document.getElementById("account").value;
+        if(account == ""){
+            layer.msg("请输入用户名！");
+            return false;
+        }
+
+        //3.校验密码
+        var pwd =document.getElementById("pwd").value;
+        if(pwd == ""){
+            layer.msg("请输入密码！");
+            return false;
+        }
+        //4.校验确认密码
+        var affirm_pwd =document.getElementById("affirm_pwd").value;
+        if(affirm_pwd == ""){
+            layer.msg("请确认密码！");
+            return false;
+        }
+        //5.校验年龄
+        var age =document.getElementById("age").value;
+        if(age == ""){
+            layer.msg("请输入年龄！");
+            return false;
+        }
+        //6.校验手机号
+        var mobile = document.getElementById("mobile").value;
+        if(mobile == ""){
+            layer.msg("请输入手机号！");
+            return false;
+        }
+        //7.校验验证码
+        var code = document.getElementById("code").value;
+        if(code == ""){
+            layer.msg("请输入验证码！");
+            return false;
+        }
+        return true;
+    }
+
+</script>
+<!--引入JavaScript-->
+<script type="text/javascript" th:src="@{/layui/layui.all.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery-3.4.1.min.js}"></script>
+</body>
+</html>

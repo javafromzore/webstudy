@@ -19,12 +19,20 @@
     <file url="file://$PROJECT_DIR$/framework/study-common-start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/study-kafka-start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/study-kafka-start/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/framework/study-mail-start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/framework/study-mail-start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/study-mybatis-start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/study-mybatis-start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/study-pay-start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/study-pay-start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/study-redis-start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/study-redis-start/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/framework/study-security-start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/framework/study-security-start/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/framework/study-security-start/src/main/resources/milk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/framework/study-security-start/src/main/resources/public" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/framework/study-sms-start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/framework/study-sms-start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/study-web-start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/study-web-start/src/main/resources/${env}" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/study-web-start/src/main/resources/milk" charset="UTF-8" />
@@ -47,10 +55,23 @@
     <file url="file://$PROJECT_DIR$/school/src/main/resources/public" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/system/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/system/src/main/resources/${env}" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/system/src/main/resources/milk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/system/src/main/resources/public" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user/src/main/resources/${env}" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user/src/main/resources/milk" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user/src/main/resources/public" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user2/src/main/resources/${env}" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user2/src/main/resources/milk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user2/src/main/resources/public" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userApi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userApi/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userApi2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userApi2/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wx/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wx/src/main/resources/${env}" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wx/src/main/resources/milk" charset="UTF-8" />

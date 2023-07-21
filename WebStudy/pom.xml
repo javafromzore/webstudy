@@ -24,6 +24,8 @@
         <module>pay</module>
         <module>userApi</module>
         <module>userApi2</module>
+        <module>framework/study-security-start</module>
+        <module>system</module>
     </modules>
 
     <properties>
@@ -133,11 +135,29 @@
                 <artifactId>study-pay-start</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.test</groupId>
+                <artifactId>study-sms-start</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.test</groupId>
+                <artifactId>study-mail-start</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <!--通用工具-->
     <dependencies>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.13</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

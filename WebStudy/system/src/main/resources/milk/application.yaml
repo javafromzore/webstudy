@@ -1,0 +1,25 @@
+########################################基本配置########################################
+server:
+  port: 1114
+
+spring:
+  application:
+    name: system
+  profiles:
+    active: dev
+
+
+
+########################################权限配置########################################
+#  security:
+#    user:
+#      name: root
+#      password: root
+
+
+########################################数据库配置########################################
+  datasource:
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://127.0.0.1:3306/study-system?useUnicode=true&useSSL=false&characterEncoding=utf8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
+    username: root
+    password: 123456

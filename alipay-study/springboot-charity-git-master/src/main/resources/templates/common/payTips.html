@@ -1,0 +1,153 @@
+<html lang="en"   xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}">
+    <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript" th:src="@{/js/jquery-3.4.1.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.js}"></script>
+    <style type="text/css">
+        #tips{
+            text-align: center;
+            padding-top: 150px;
+
+        }
+        #tips div{
+            width: 30%;
+            margin: auto;
+        }
+        #tips p{
+            padding: 25px   0px;
+            border-radius: 5px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo" style="font-weight: bold; font-size: 18px; margin-left: 15px" >
+            慈善公益平台
+        </div>
+
+        <!-- 头部区域（可配合layui已有的水平导航） -->
+
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;" >
+                    <img src="${pageContext.request.contextPath}/${sessionScope.managerSession.img}" class="layui-nav-img">
+                    [[${session.loginUser.user_name}]]
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">基本资料</a></dd>
+                    <dd><a href="">安全设置</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a th:href="@{/user/logout}">注销</a></li>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="" href="javascript:;">个人空间</a>
+                    <dl class="layui-nav-child">
+                        <dd><a th:href="@{/user/info}" target="mainFrame">个人信息</a></dd>
+                        <dd>
+                            <a th:href="@{/donaItem/myItem}" target="mainFrame">
+                                我的贡献
+                            </a>
+                        </dd>
+                        <dd>
+                            <a th:href="@{/dona/myDona}" target="mainFrame">我的求助</a>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a href="javascript:;">爱心项目</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="${pageContext.request.contextPath }/goods.do?method=typelist" target="mainFrame">
+                            ？？？</a>
+                        </dd>
+                        <dd><a href="${pageContext.request.contextPath }/goods.do?method=goodslist&pageNum=1&typeid=0" target="mainFrame">
+                            ？？？</a>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a href="javascript:;">公开募捐</a>
+                    <dl class="layui-nav-child">
+                        <dd><a th:href="@{/dona/queryState_1}">
+                            参与募捐</a>
+                        </dd>
+                        <dd><a th:href="@{/dona/addpage}" target="mainFrame">
+                            我要求助</a>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a href="javascript:;">捐款列表</a>
+                    <dl class="layui-nav-child">
+                        <dd><a th:href="@{/donaItem/allItem}" target="mainFrame">
+                            捐款时讯</a>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a href="javascript:;">公益排行</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="${pageContext.request.contextPath }/goods.do?method=typelist" target="mainFrame">
+                            排行榜</a>
+                        </dd>
+                    </dl>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <div style="padding: 15px;" >
+            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+                <legend>提示信息</legend>
+            </fieldset>
+            <div id="tips" >
+                <div th:if="${flag eq 1}">
+                    <!--  如果标志位为真      -->
+                    <!--        <c:if test="${Flag==true}">-->
+                    <p class="bg-success" th:text="${msg}+'成功'">
+                        <span class="glyphicon glyphicon-ok-circle" ></span>
+                    </p>
+                    <!--        </c:if>-->
+                </div>
+
+                <div th:if="${flag eq 0}">
+
+                    <p class="bg-danger" th:text="${msg}+'失败'">
+                        <span class="glyphicon glyphicon-remove-circle"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-footer">
+        <!-- 底部固定区域 -->
+        © 湖北大学18软三黄晗滨
+    </div>
+</div>
+
+<script type="text/javascript" th:src="@{/layui/layui.all.js}"></script>
+</body>
+</html>

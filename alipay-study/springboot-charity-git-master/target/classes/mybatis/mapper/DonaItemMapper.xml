@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.hhb.mapper.DonaItemMapper">
+
+    <insert id="addItem" parameterType="com.hhb.pojo.Dona_item">
+        insert into db_charity.dona_item(dona_id, user_id, money, time)
+        values (#{dona_id},#{user_id},#{money},#{time})
+    </insert>
+
+    <select id="myItem" resultType="com.hhb.VO.dona_item">
+        select i.*,d.dona_name
+        from db_charity.donation d,db_charity.dona_item i
+        where d.dona_id=i.dona_id and i.user_id=#{user_id}
+        order by i.time DESC
+    </select>
+
+    <select id="allItem" resultType="com.hhb.VO.dona_item">
+
+    </select>
+
+
+
+</mapper>
