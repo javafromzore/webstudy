@@ -1,0 +1,10 @@
+########################################配置中心配置########################################
+spring:
+  application:
+    name: car
+  cloud:
+    nacos:
+      config:
+        serverAddr: localhost:8848
+        fileExtension: yaml
+        refresh-enabled: true

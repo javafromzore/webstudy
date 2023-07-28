@@ -15,6 +15,13 @@ public class StudentServiceImpl implements StudentService {
     public Student findByClassId() {
         Student student = studentMapper.findById(1);
         student.getAClass();
+        Long.parseLong("1");
+        return student;
+    }
+
+    public Student getStudentDetail() {
+        Student student = studentMapper.findById(1);
+        student.getAClass();
         return student;
     }
 }

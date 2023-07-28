@@ -13,10 +13,12 @@
         <module name="study-common-start" />
         <module name="study-aop-start" />
         <module name="pay" />
+        <module name="study-security-start" />
         <module name="study-zookeeper-start" />
         <module name="study-wx-start" />
         <module name="study-redis-start" />
         <module name="study-web-start" />
+        <module name="system" />
         <module name="car" />
         <module name="userApi" />
         <module name="userApi2" />
@@ -25,6 +27,8 @@
         <module name="carApi" />
         <module name="config" />
         <module name="user" />
+        <module name="study-mail-start" />
+        <module name="study-sms-start" />
         <module name="gateway" />
       </profile>
     </annotationProcessing>

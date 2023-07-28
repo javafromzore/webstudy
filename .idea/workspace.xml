@@ -52,7 +52,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "F:/Sources/study",
+    "last_opened_file_path": "F:/Sources/WebStudy/WebStudy/framework/study-web-start/src/main/resources/META-INF",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -60,11 +60,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Sources\WebStudy\WebStudy\framework\study-web-start\src\main\resources\META-INF" />
+      <recent name="F:\Sources\WebStudy\WebStudy\framework\study-web-start\src\main\resources" />
       <recent name="F:\Sources\WebStudy\WebStudy" />
       <recent name="F:\Sources\WebStudy\WebStudy\framework\study-pay-start\src\main\resources\META-INF\spring" />
       <recent name="F:\Sources\WebStudy\WebStudy\pay\src\main\java\org\test\pay" />
-      <recent name="F:\Sources\WebStudy\WebStudy\framework\study-redis-start\src\main\resources\META-INF.spring" />
-      <recent name="F:\Sources\WebStudy\WebStudy\framework\study-redis-start\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Sources\WebStudy\WebStudy\pay\src\main\resources\milk" />
@@ -78,7 +78,7 @@
       <recent name="org.test.user.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KafKaTest.kafkaTest">
+  <component name="RunManager" selected="Application.CarApp">
     <configuration name="CarApp" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.test.car.CarApp" />
       <module name="car" />
@@ -171,35 +171,9 @@
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/WebStudy/user/src/main/java/org/test/user/service/impl/CollectServiceImpl.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/WebStudy/framework/study-common-start/src/main/java/org/test/common/util/ArrayUtil.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/WebStudy/wx/src/main/java/org/test/wx/controller/WXController.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/WebStudy/wx/src/main/java/org/test/wx/controller/WXController.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/WebStudy/car/src/main/java/org/test/car/controller/CarController.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/WebStudy$CarApp.ic" NAME="CarApp Coverage Results" MODIFIED="1690554259345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.test.car.*</FILTER>
+    </SUITE>
   </component>
 </project>

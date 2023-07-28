@@ -1,0 +1,9 @@
+########################################配置中心配置########################################
+##配置中心配置只能够放在bootstrap中
+spring:
+  cloud:
+    nacos:
+      config:
+        serverAddr: localhost:8848
+        fileExtension: yaml
+        refresh-enabled: true
