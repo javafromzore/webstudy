@@ -40,6 +40,11 @@
         </dependency>
 
         <dependency>
+            <groupId>org.test</groupId>
+            <artifactId>study-redis-start</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>

@@ -1,11 +1,10 @@
 ########################################配置中心配置########################################
 spring:
   application:
-    name: car
+    name: gateway
   cloud:
     nacos:
       config:
-        group: business
         serverAddr: localhost:8848
         fileExtension: yaml
         namespace: dev

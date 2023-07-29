@@ -28,9 +28,16 @@ pagehelper:
 
 
 
+########################################nacos配置########################################
+spring:
+  cloud:
+    nacos:
+      discovery:
+        namespace: dev
+
+
 
 ########################################redis配置########################################
-spring:
   redis:
     database: 0 #redis数据库索引
 #    host: localhost
